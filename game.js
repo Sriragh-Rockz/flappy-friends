@@ -45,7 +45,8 @@ function flap() {
     sound.play();
 }
 
-document.addEventListener("click", () => {
+
+document.addEventListener("pointerdown", () => {
 
     if (gameOver) {
         restartGame();

@@ -27,4 +27,9 @@ canvas{
     border:none;
     border-radius:12px;
     cursor:pointer;
+}html, body {
+    touch-action: manipulation;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
 }
