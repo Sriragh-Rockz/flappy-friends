@@ -1,0 +1,35 @@
+<<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Flappy Friends</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div id="menu">
+<audio id="menuMusic" loop>
+    <source src="assets/menu.mp3" type="audio/mpeg">
+</audio>
+        <h1>🐦 FLAPPY FRIENDS 🐦</h1>
+
+        <button onclick="selectBird('affu')">Affu Bird</button>
+        <button onclick="selectBird('janu')">Janu Bird</button>
+        <button onclick="selectBird('lulu')">Lulu Bird</button>
+
+        <br><br>
+
+        <button onclick="selectBird('subbu')">Subbu Bird</button>
+        <button onclick="selectBird('dharu')">Dharu Bird</button>
+        <button onclick="selectBird('suji')">Suji Bird</button>
+
+    </div>
+
+    <canvas id="game"></canvas>
+
+    <script src="game.js"></script>
+
+</body>
+
+</html>

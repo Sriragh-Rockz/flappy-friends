@@ -1,0 +1,30 @@
+body{
+    margin:0;
+    overflow:hidden;
+    background:skyblue;
+    font-family:Arial, sans-serif;
+}
+
+canvas{
+    display:block;
+}
+
+#menu{
+    position:absolute;
+    width:100%;
+    text-align:center;
+    top:120px;
+}
+
+#menu h1{
+    font-size:50px;
+}
+
+#menu button{
+    padding:15px 25px;
+    margin:10px;
+    font-size:20px;
+    border:none;
+    border-radius:12px;
+    cursor:pointer;
+}
