@@ -46,7 +46,16 @@ function flap() {
 }
 
 document.addEventListener("click", () => {
-    if (gameStarted) flap();
+
+    if (gameOver) {
+        restartGame();
+        return;
+    }
+
+    if (gameStarted) {
+        flap();
+    }
+
 });
 
 document.addEventListener("keydown", (e) => {
