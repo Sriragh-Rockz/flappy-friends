@@ -23,7 +23,32 @@ const pipes = [];
 function selectBird(name) {
 
     bird.src = "assets/" + name + ".png";
-    flapSound.src = "assets/" + name + ".mp3";
+
+    if (name === "suji") {
+
+        const useDJ = confirm(
+            "OK = Suji DJ Voice\nCancel = Normal Voice"
+        );
+
+        flapSound.src = useDJ
+            ? "assets/sujispl.mp3"
+            : "assets/suji.mp3";
+
+    } else if (name === "subbu") {
+
+        const useSpl = confirm(
+            "OK = Subash Special Voice\nCancel = Normal Voice"
+        );
+
+        flapSound.src = useSpl
+            ? "assets/subbuspl.mp3"
+            : "assets/subbu.mp3";
+
+    } else {
+
+        flapSound.src = "assets/" + name + ".mp3";
+
+    }
 
     document.getElementById("menu").style.display = "none";
 
@@ -31,8 +56,8 @@ function selectBird(name) {
     menuMusic.currentTime = 0;
 
     gameStarted = true;
-
 }
+
 
 function flap() {
 
